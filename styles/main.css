@@ -1,3 +1,12 @@
 body {
 	background-color: #EAEAEA;
 }
+
+.red-button {
+	background-color: white;
+	font-size: 2em;
+	font-color: red;
+	border-color: red;
+	border: 1px;
+}
+

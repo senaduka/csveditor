@@ -1,4 +1,4 @@
-## CsvEditor based on FLUX React JS Boilerplate
+## CsvEditor based on Flux-Chat example and some parts of FLUX React JS Boilerplate 
 
 Read more about FLUX over at [Facebook Flux Website](http://facebook.github.io/flux/) 
 Read more about RejactJS on [React JS Website](http://facebook.github.io/react/) 
