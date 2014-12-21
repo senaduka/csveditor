@@ -124,6 +124,23 @@ var browserifyTask = function (options) {
   
 }
 
+var assetsTask = function(options) {
+  if(options.development) {
+    var run = function () {
+      console.log(arguments)
+       var start = new Date();
+        console.log('Copying assets');
+        gulp.src(options.src)
+          .pipe(gulp.dest(options.dest));        
+    };
+    run();
+    gulp.watch(options.src, run);
+  } else {
+     gulp.src(options.src)
+          .pipe(gulp.dest(options.dest));        
+  }
+}
+
 var cssTask = function (options) {
     if (options.development) {
       var run = function () {
@@ -162,7 +179,15 @@ gulp.task('default', function () {
     dest: './build'
   });
 
+  assetsTask({
+    development: true,
+    src: './app/assets/**/*',
+    dest: './build'
+  });
+
 });
+
+
 
 gulp.task('deploy', function () {
 
@@ -177,6 +202,12 @@ gulp.task('deploy', function () {
     src: './styles/**/*.css',
     dest: './dist'
   });
+
+  assetsTask({
+    development: false,
+    src: './app/assets/**/*',
+    dest: './dist'
+  })
 
 });
 
