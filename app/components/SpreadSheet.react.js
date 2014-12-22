@@ -4,6 +4,8 @@ var React = require('react');
 var LocalStore = require('../stores/LocalStore');
 
 
+
+
 var getStateFromStore = function () {
     return {
         columns: LocalStore.getColumns(),
