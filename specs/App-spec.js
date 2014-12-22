@@ -1,4 +1,4 @@
-var App = require('./../app/App.js');
+/* var App = require('./../app/App.js');
 var TestUtils = require('react-addons').TestUtils;
 
 describe("App", function() {
@@ -8,4 +8,4 @@ describe("App", function() {
     expect(app.getDOMNode().tagName).toEqual('DIV');
   });
 
-});
+}); */

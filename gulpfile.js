@@ -21,7 +21,6 @@ var connect = require('gulp-connect');
 var dependencies = [
 	'react',
   'react-addons',
-  'flux-react'
 ];
 
 var browserifyTask = function (options) {
