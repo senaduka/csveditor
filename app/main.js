@@ -1,4 +1,4 @@
 /** @jsx React.DOM */
 var React = require('react');
-var SpreadSheet = require('./components/SpreadSheet.react');
-React.render(<SpreadSheet/>, document.body);
+var Application = require('./components/Application.react');
+React.render(<Application/>, document.body);

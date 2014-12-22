@@ -3,12 +3,16 @@ var keyMirror = require('keymirror');
 module.exports = {
 
   ActionTypes: keyMirror({    
-    CREATE_MESSAGE: null
+    CHOOSE_FILE: null
   }),
 
   PayloadSources: keyMirror({
     BACKEND_ACTION: null,
     VIEW_ACTION: null
+  }),
+
+  EventTypes: keyMirror({
+    FILE_CHOSEN: null
   })
 
 };
